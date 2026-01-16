@@ -54,7 +54,6 @@ body {
   margin-top: 1.5rem;
 }
 
-/* HERO */
 .hero {
   background: linear-gradient(135deg, #0f766e, #34d399);
   color: white;
@@ -62,34 +61,26 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  /* horizontal center */
+  justify-content: center; /* vertical center if needed */
   text-align: center;
+  gap: 1.5rem; /* spacing between elements */
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-}
-
+/* BTN */
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  background: white;
-  color: #0f766e;
+  display: inline-flex;           /* allows centering content inside button */
+  align-items: center;            /* vertical align inside button */
+  justify-content: center;        /* horizontal align inside button */
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
-  text-decoration: none;
   font-weight: 600;
-  margin-top: 1.5rem;
+  text-decoration: none;
+  background: white;
+  color: #0f766e;
+  margin-top: 0;                  /* let flex gap handle spacing */
 }
+
 /* SECTIONS */
 section {
   padding: 4rem 2rem;
